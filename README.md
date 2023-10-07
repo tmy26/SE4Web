@@ -1,6 +1,6 @@
-# SE4Web
+# CheatSheet
 
------Cheat Sheet 1st exec-----
+-----1st exec-----
 
 1. create new folder
 2. check if python is installed | python --version
