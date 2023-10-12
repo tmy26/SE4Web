@@ -18,4 +18,4 @@
 11. use python manage.py makemigrations when u have added a library or created/made changes to a model in the db! Then use python manage.py migrate
 12. runserver | python manage.py runserver
 13. createsuperuser | python manage.py createsuper
-14. log into admin panel
+14. log into admin panel - http://127.0.0.1:8000/admin/
