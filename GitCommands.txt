@@ -1,0 +1,8 @@
+git add . - adds all files
+git add * - adds only the untracked files
+git commit -m ''  - commits
+git push - pushes
+git checkout name_of_branch - switches branch name
+git branch name_of_branch - creates branch with name
+git pull -  fetch and download content from a remote repository and immediately update the local repository to match that conten
+git fetch  downloads commits, files, and refs from a remote repository into your local repo
