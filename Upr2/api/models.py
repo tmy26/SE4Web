@@ -8,3 +8,4 @@ class User(AbstractUser):
     
     def __str__(self) -> str:
         return self.username
+    

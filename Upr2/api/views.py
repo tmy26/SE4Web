@@ -9,3 +9,4 @@ class UserRegisterView(APIView):
     def post(self, request):
         msg = create_user(request)
         return Response(data=msg, status=status.HTTP_200_OK)
+    
