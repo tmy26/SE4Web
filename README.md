@@ -6,7 +6,7 @@
 2. check if python is installed | python --version
 3. create venv | python -m venv venv
 4. launch venv | .\venv\Scripts\activate
-5. pip install django 
+5. pip install django
 5.1 pip install djangorestframework
 6. create project | django-admin startproject webapp
 6.1 cd webapp
@@ -17,5 +17,5 @@
 10. migrate - python manage.py migrate
 11. use python manage.py makemigrations when u have added a library or created/made changes to a model in the db! Then use python manage.py migrate
 12. runserver | python manage.py runserver
-13. createsuperuser | python manage.py createsuper
-14. log into admin panel
+13. createsuperuser | python manage.py createsuperuser
+14. log into admin panel - http://127.0.0.1:8000/admin/
