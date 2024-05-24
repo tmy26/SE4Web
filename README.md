@@ -20,4 +20,4 @@
 13. createsuperuser | python manage.py createsuperuser
 14. log into admin panel - http://127.0.0.1:8000/admin/
 
-15. Fetch.py съдържа как се вика outside api
+15. Fetch.py how to call an outside api
