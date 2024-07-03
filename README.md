@@ -1,23 +1,60 @@
-# CheatSheet
+# First steps in Django
+### This project was created for educational purposes while I was teaching at Plovdiv University, its main goal is to introduce students to Python and Django.
 
------1st exec-----
 
-1. create new folder
-2. check if python is installed | python --version
-3. create venv | python -m venv venv
-4. launch venv | .\venv\Scripts\activate
-5. pip install django
-5.1 pip install djangorestframework
-6. create project | django-admin startproject webapp
-6.1 cd webapp
-6.2 django-admin startapp api
-7. go to webapp settings and open settings.py | in installed apps add  'rest_framework', 'api', 'rest_framework.authtoken'
-8. go to urls and add path -  #path('', include('api.urls')), as comment
-9. create urls.py in folder api
-10. migrate - python manage.py migrate
-11. use python manage.py makemigrations when u have added a library or created/made changes to a model in the db! Then use python manage.py migrate
-12. runserver | python manage.py runserver
-13. createsuperuser | python manage.py createsuperuser
-14. log into admin panel - http://127.0.0.1:8000/admin/
 
-15. Fetch.py how to call an outside api
+### How to create new project
+1. Create new folder
+2. Check if python is installed
+    ```
+    python --version
+    ```
+3. Create virtual environment
+    ```
+    python -m venv venv
+    ```
+4. Launch the virtual environment(venv)
+    ```
+    For windows:
+    	.\venv\Scripts\activate
+    For MacOs:
+    	source venv/bin/activate
+    ```
+5. Install the needed libraries
+    ```
+    pip install django djangorestframework
+    ```
+6. Create project
+    ```
+    django-admin startproject webapp .
+    ```
+7. Create app
+    ```
+    django-admin startapp api
+    ```
+8. Open your VSCode and navigate to webapp_settings.py and in INSTALLED_APPS add the following:
+    ```
+    'rest_framework',
+    'rest_framework.authtoken'
+    'api', 
+    ```
+9. Navigate to webapp_urls.py and add the following
+    ```
+    #path('', include('api.urls')),
+    ```
+10. Create urls.py in api folder
+
+### If you managed to follow all the steps, now you just have to 'makemigrations' and 'migrate'
+	python manage.py makemigrations
+	python manage.py migrate
+*Use 'python manage.py makemigrations' when u have added a library or created/made changes to a model in the db! Then use python manage.py migrate to apply the changes!*
+
+11. Create super user with the following command
+    ```
+    python manage.py createsuperuser
+    ```
+12. Start the server
+    ```
+    python manage.py runserver
+    ```
+### Finally login in to the admin panel - http://127.0.0.1:8000/admin/
